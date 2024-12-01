@@ -18,7 +18,7 @@ body {
 
   @font-face {
     font-family: "circular-web";
-    src: url("/fonts/cirularweb-book.woff2") format("woff2");
+    src: url('/fonts/circularweb-book.woff2') format('woff2');
   }
 
   @font-face {
@@ -62,6 +62,14 @@ body {
 
   .flex-center {
     @apply flex justify-center items-center;
+  }
+
+  .about-subtext {
+    @apply absolute bottom-[-80dvh] left-1/2 w-full max-w-96 -translate-x-1/2 text-center font-zentry text-lg md:max-w-[34rem];
+  }
+
+  .about-image {
+    @apply absolute left-1/2 top-0 z-20 h-[60vh] w-96 origin-center -translate-x-1/2 overflow-hidden rounded-3xl md:w-[30vw];
   }
 }
 
